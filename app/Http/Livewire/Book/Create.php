@@ -10,7 +10,7 @@ class Create extends Component
     public Book $book;
 
     protected $rules = [
-        'book.name' => 'required|string',
+        'book.name' => 'required|integer',
         'book.pages' => 'required|integer',
         'book.author' => 'required|string'
     ];
@@ -19,6 +19,14 @@ class Create extends Component
     {
         $this->book = new Book();
     }
+
+
+    // public function updating($name, $value)
+    // {
+    //     if($name == "book.name") {
+    //         $this->validate();
+    //     }
+    // }
 
     public function save()
     {
