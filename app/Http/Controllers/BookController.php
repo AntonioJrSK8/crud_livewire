@@ -15,17 +15,17 @@ class BookController extends Controller
 
     public function create()
     {
-        //
+        return view('book.create');
     }
 
     public function show(Book $book)
     {
-        //
+        return view('book.show');
     }
 
     public function edit(Book $book)
     {
-        //
+        return view('book.edit');
     }
 
     
