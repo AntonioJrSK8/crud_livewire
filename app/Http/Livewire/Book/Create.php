@@ -12,7 +12,9 @@ class Create extends Component
     protected $rules = [
         'book.name' => 'required|string',
         'book.pages' => 'required|integer',
-        'book.author' => 'required|string'
+        'book.author' => 'required|string',
+        'book.email' => '',
+        'book.status' => 'required|integer'
     ];
 
     public function mount()

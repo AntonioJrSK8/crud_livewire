@@ -18,6 +18,8 @@ class CreateBooksTable extends Migration
             $table->string('name');
             $table->integer('pages');
             $table->string('author');
+            $table->string('email')->null();
+            $table->integer('status');
             $table->timestamps();
         });
     }
