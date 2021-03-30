@@ -22,9 +22,11 @@ class BookFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->colorName(),
+            'name'  => $this->faker->colorName(),
             'pages' => $this->faker->numberBetween(50, 300),
-            'author'=> $this->faker->firstName(), 
+            'author'=> $this->faker->firstName(),
+            'email' => $this->faker->email(),
+            'status' => $this->faker->numberBetween(0,1)
         ];
     }
 }

@@ -13,6 +13,8 @@ class Book extends Model
         'name',
         'pages',
         'author',
+        'email',
+        'status'
     ];
 
 }
