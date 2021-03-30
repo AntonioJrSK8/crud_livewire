@@ -36,6 +36,9 @@ class Create extends Component
         $this->validate();
 
         Book::create($this->book->toArray());
+
+        session()->flash('success', 'Registro criado com sucesso!');
+
         return redirect()->route('books.index');
     }
 

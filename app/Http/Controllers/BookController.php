@@ -20,12 +20,12 @@ class BookController extends Controller
 
     public function show(Book $book)
     {
-        return view('book.show');
+        return view('book.show', compact('book'));
     }
 
     public function edit(Book $book)
     {
-        return view('book.edit');
+        return view('book.edit', compact('book'));
     }
 
     

@@ -25,7 +25,7 @@
 
                                 <div class="col-span-6 sm:col-span-3">
                                     <label for="pages" class="block text-sm font-medium text-gray-700">Number Pages</label>
-                                    <input wire:model='book.pages' type="text" name="pages" id="pages" autocomplete="pages" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                    <input wire:model='book.pages' type="number" name="pages" id="pages" autocomplete="pages" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
 
                                     @if ($errors->has('book.pages'))
                                         <p class="text-red-500 text-xs italic">
