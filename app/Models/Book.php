@@ -14,7 +14,18 @@ class Book extends Model
         'pages',
         'author',
         'email',
-        'status'
+        'status',
+        'user_id'
     ];
+
+    /**
+     * Get the user that owns the Book
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
 
 }
